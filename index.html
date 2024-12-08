@@ -1,0 +1,314 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Listing</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">BizList</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-disabled="true">Listings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">Contact</a>
+                  </li>
+              </ul>
+              <div class="d-flex" role="search">
+                <a href="login.html" class="btn btn-outline-info btn-sm" type="submit">Login</a>
+                <a href="register.html" class="btn btn-outline-info btn-sm ms-1" type="submit">Register</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+      <!-- search banner-->
+      <div class="row  search-banner" style="min-height:300px;margin-top:50px; background-image:linear-gradient(to bottom, rgba(19, 53, 123, 0.5), rgba(0,0,0, 0.73)),url('images/biz.jpg');  background-size: cover;	">
+        <div class="col text-center py-5">
+            <h3 class="text-white display-4 mb-4 "> Need a service? Search our Directory</h1>
+           <form id="search_resort">
+            <div class="row gx-0">
+              <div class="col-md-3 offset-md-2">
+                <select class="form-select noround border-light" id="state">
+                  <option value=""> select category</option>
+               </select>
+              </div>
+              <div class="col-md-3">
+                 <select class="form-select noround border-light" id="category">
+                    <option value=""> select state</option>
+                 </select>
+              </div>
+              <div class="col-md-2">
+                 <button class="btn custom-btn col-12 noround border-light">Search</button>
+              </div>
+            </div>
+           </form>  
+           
+           <div id="searchedresult"></div> 
+        </div>
+      </div>
+       <!-- end search banner-->
+      
+      
+
+       
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+            <div class="row">
+                <div class="col"><h2 class="pb-2 border-bottom">Featured Listings</h2></div>
+            </div>
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-4">
+            
+            
+             
+
+            <div class="col">
+                <div class="card shadow-sm">
+                  <img src="images/companyimg.jpg" class="img-fluid" width="100%" height="225" role="img">
+                  <div class="card-body">
+                    <h3>Business Name</h3>
+                  <p class="card-text">Description.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                    <small class="text-body-secondary">Date posted</small>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="images/companyimg.jpg" class="img-fluid" width="100%" height="225" role="img">
+                  <div class="card-body">
+                    <h3>Business Name</h3>
+                  <p class="card-text">Description.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                    <small class="text-body-secondary">Date posted</small>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="images/companyimg.jpg" class="img-fluid" width="100%" height="225" role="img">
+                  <div class="card-body">
+                    <h3>Business Name</h3>
+                  <p class="card-text">Description.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                    <small class="text-body-secondary">Date posted</small>
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+    
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Why are we the best?</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+                    <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                  </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Reliable</h3>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Learn more
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+                    <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+                    <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+                    <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+                  </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Affordable</h3>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Learn more
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"/>
+                  </svg>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Professional</h3>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Learn more
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+            <div class="row">
+                <div class="col"><h2 class="pb-2 border-bottom">More Listings</h2></div>
+            </div>
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-4">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/companyimg.jpg" class="img-fluid" width="100%" height="150" role="img">
+                <div class="card-body">
+                    <h3>Business Name</h3>
+                  <p class="card-text">Description.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                    <small class="text-body-secondary">Date posted</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/companyimg.jpg" class="img-fluid" width="100%" height="225" role="img">
+                <div class="card-body">
+                    <h3>Business Name</h3>
+                    <p class="card-text">Description.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      </div>
+                      <small class="text-body-secondary">Date posted</small>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/companyimg.jpg" class="img-fluid" width="100%" height="225" role="img">
+                <div class="card-body">
+                    <h3>Business Name</h3>
+                    <p class="card-text">Description.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      </div>
+                      <small class="text-body-secondary">Date posted</small>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                  <img src="images/companyimg.jpg" class="img-fluid" width="100%" height="225" role="img">
+                  <div class="card-body">
+                    <h3>Business Name</h3>
+                  <p class="card-text">Description.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                    <small class="text-body-secondary">Date posted</small>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="images/companyimg.jpg" class="img-fluid" width="100%" height="225" role="img">
+                  <div class="card-body">
+                    <h3>Business Name</h3>
+                  <p class="card-text">Description.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                    <small class="text-body-secondary">Date posted</small>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="images/companyimg.jpg" class="img-fluid" width="100%" height="225" role="img">
+                  <div class="card-body">
+                    <h3>Business Name</h3>
+                  <p class="card-text">Description.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </div>
+                    <small class="text-body-secondary">Date posted</small>
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+    
+            
+          </div>
+          <div class="row">
+            <div class="col text-center py-4"><p><a href="#">View All Listings</a></p></div>
+        </div>
+
+        </div>
+      </div>
+
+      
+
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Listings</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2024 Cohort 29 Class Project.  BizList, Inc</p>
+        </footer>
+      </div>
+    
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
